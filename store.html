@@ -29,11 +29,26 @@
       </a>
 
       <ul class="nav-right">
-        <li><a class="is-active" href="./store.html" aria-current="page">STORE</a></li>
+        <li><a href="./store.html" class="is-active" aria-current="page">STORE</a></li>
         <li><a href="./artem.html">ARTEM</a></li>
         <li><a href="./reach-us.html">REACH US</a></li>
       </ul>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <ul>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./expertise.html">OUR EXPERTISE</a></li>
+        <li><a href="./products.html">PRODUCTS</a></li>
+        <li><a href="./store.html" aria-current="page">STORE</a></li>
+        <li><a href="./artem.html">ARTEM</a></li>
+        <li><a href="./reach-us.html">REACH US</a></li>
+      </ul>
+    </div>
   </header>
 
   <main>
@@ -211,6 +226,7 @@
     </div>
   </footer>
 
+  <script src="./js/script.js"></script>
   <script src="./js/store.js"></script>
 </body>
 </html>
