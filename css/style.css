@@ -28,12 +28,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--ink);
-  background-color: #1b2e1d;
-  background-image: url("../images/site-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: var(--white);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -2342,6 +2337,11 @@ body.page-products .footer-links a[aria-current="page"] {
    Reach Us page
    ========================================================= */
 
+body.page-reach-us {
+  background: var(--white);
+  background-image: none;
+}
+
 body.page-reach-us .nav-left a.is-active,
 body.page-reach-us .nav-right a.is-active,
 body.page-reach-us .nav-left a[aria-current="page"],
@@ -2367,20 +2367,32 @@ body.page-reach-us .mobile-nav a[aria-current="page"] {
   justify-content: center;
   overflow: hidden;
   color: #fff;
+  background-color: #1a1a1a;
 }
 
 .reach-hero-media {
   position: absolute;
   inset: 0;
+  margin: 0;
+  background-color: #1a1a1a;
   background-image: url("../images/94843c26620fbd9a6e54d989e8d08fc7e27e9870.jpg");
   background-size: cover;
   background-position: center 42%;
+}
+
+.reach-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  display: block;
 }
 
 .reach-hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .reach-hero-title {

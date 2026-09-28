@@ -26,12 +26,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--ink);
-  background-color: #1b2e1d;
-  background-image: url("../images/site-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: var(--white);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
