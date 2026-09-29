@@ -248,7 +248,13 @@ body.nav-open {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.42);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.52) 35%,
+      rgba(0, 0, 0, 0.42) 100%
+    );
 }
 
 .hero-content {

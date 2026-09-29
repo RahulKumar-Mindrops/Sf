@@ -561,9 +561,12 @@ body.page-home .hero-title {
 
 .symphony-explore {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: 0;
-  transform: translate(-50%, 45%);
+  margin: 0 auto;
+  width: fit-content;
+  transform: translateY(45%);
   z-index: 3;
   border: 1px solid var(--gold);
   background: var(--forest-btn);
@@ -1859,7 +1862,13 @@ body.page-artem .footer-links a[aria-current="page"] {
 .artem-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.48);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.55) 35%,
+      rgba(0, 0, 0, 0.48) 100%
+    );
 }
 
 .artem-hero-content {
@@ -2266,7 +2275,13 @@ body.page-products .footer-links a[aria-current="page"] {
 .products-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.38);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.48) 35%,
+      rgba(0, 0, 0, 0.38) 100%
+    );
 }
 
 .products-hero-title {
@@ -2727,7 +2742,13 @@ body.page-reach-us .mobile-nav a[aria-current="page"] {
 .reach-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.5) 35%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
   z-index: 1;
 }
 
@@ -3242,7 +3263,13 @@ body.page-expertise .footer-links a[aria-current="page"] {
 .expertise-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.42);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.52) 35%,
+      rgba(0, 0, 0, 0.42) 100%
+    );
 }
 
 .expertise-hero-title {
@@ -3608,6 +3635,14 @@ body.page-expertise .footer-links a[aria-current="page"] {
 .js-anim .reveal-load.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
+}
+
+.js-anim .symphony-explore.reveal {
+  transform: translateY(calc(45% + 36px));
+}
+
+.js-anim .symphony-explore.reveal.is-visible {
+  transform: translateY(45%);
 }
 
 .js-anim .hero-media.reveal-load {
